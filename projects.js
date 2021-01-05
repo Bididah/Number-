@@ -47,4 +47,6 @@ const calculateWeight = (earthWeight,planet) => {
    return newWeight ; 
 }
 
-console.log(calculateWeight(1 , "Saturn"))
+const numImaginaryFriends = (totalNumberOfFreinds) => Math.round( (totalNumberOfFreinds*35)/100 )
+console.log(numImaginaryFriends(100))
+
