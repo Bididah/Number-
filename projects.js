@@ -49,4 +49,5 @@ const calculateWeight = (earthWeight,planet) => {
 
 const numImaginaryFriends = (totalNumberOfFreinds) => Math.round( (totalNumberOfFreinds*35)/100 )
 console.log(numImaginaryFriends(100))
-
+const sillySentence = (str1 , str2 , str3 ) => `I am so ${str1} because I ${str2} coding! Time to write some more awesome ${str3}!`
+ 
