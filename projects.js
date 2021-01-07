@@ -68,4 +68,25 @@ const howOld = (age,year) => {
       }
    }
 }
-
+const tipCalculator = (quality , total) => {
+   let tip ;
+   switch (quality) {
+      case "bad":
+         tip = total*(5/100)
+         break;
+      case "ok":
+         tip = total*(15/100)
+            break;
+      case "good":
+         tip = total*(20/100)
+            break;
+      case "excellent":
+         tip = total*(30/100)
+            break;
+      default:
+         tip = total*(18/100)
+         break;
+   }
+   return tip ;
+}
+console.log(tipCalculator('good', 100)) 
