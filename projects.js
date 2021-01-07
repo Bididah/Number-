@@ -90,3 +90,10 @@ const tipCalculator = (quality , total) => {
    return tip ;
 }
 console.log(tipCalculator('good', 100)) 
+const colorMessage = (favoriteColor,shirtColor) => { 
+   if (favoriteColor === shirtColor) {
+      return  'The shirt is your favorite color!'
+   } else {
+      return 'That is a nice color.'
+   }
+}
