@@ -50,4 +50,22 @@ const calculateWeight = (earthWeight,planet) => {
 const numImaginaryFriends = (totalNumberOfFreinds) => Math.round( (totalNumberOfFreinds*35)/100 )
 console.log(numImaginaryFriends(100))
 const sillySentence = (str1 , str2 , str3 ) => `I am so ${str1} because I ${str2} coding! Time to write some more awesome ${str3}!`
- 
+const howOld = (age,year) => {
+   let date = new Date()
+   let currentYear = date.getFullYear()
+   if (year > currentYear){
+      let futurAge = age + (year - currentYear)
+      return `You will be ${futurAge} in the year ${year}`
+   }else if(year < currentYear ) {
+      if(year < (currentYear-age)) {
+         let numberYears = (currentYear-age) - year
+         return `'The year ${year} was ${numberYears} years before you were born`
+      } else if (year > (currentYear-age)) {
+         let numberYears = (currentYear-age) - year 
+          return `You were ${-numberYears} in the year ${year}`
+      } else {
+         return 'you was born in this year '
+      }
+   }
+}
+
