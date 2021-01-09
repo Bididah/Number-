@@ -97,3 +97,57 @@ const colorMessage = (favoriteColor,shirtColor) => {
       return 'That is a nice color.'
    }
 }
+const object1 = {
+  a: 'somestring',
+  b: 42
+};
+console.log(Object.entries(object1))
+// Meal Maker 
+const menu = {
+   _courses : {
+      appetizers : [],
+      mains : [],
+      desserts : [],
+      set appetizers(appetizers) {
+         this.appetizers = appetizers 
+      },
+      set  mains(mains) {
+         this.mains = mains
+      },
+      set desserts(desserts){
+         this.desserts = desserts 
+      },
+      get appetizers(){
+         return this.appetizers;
+      },
+      get mains() {
+         return this.mains;
+      },
+      get desserts(){
+         return this.desserts;
+      }
+   }, 
+   get courses() {
+      return {
+         appetizers : this._courses.appetizers ,
+         mains : this._courses.mains, 
+         desserts : this._courses.desserts
+      }
+   } ,
+   addDishToCourse(courseName , dishName , dishPrice) {
+      const dish = {
+         dishName ,
+         dishPrice
+      }
+      this._courses.courseName.push(dish);
+   },
+   getRandomDishFromCourse(courseName) {
+          let  dishes = this._courses[courseName] ; 
+          let x = Math.random() * dishes.length;
+          x = Math.floor(x) 
+         return dishes[x];
+   },
+   generateRandomMeal() {
+      
+   }
+} 
