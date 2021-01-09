@@ -108,8 +108,8 @@ const menu = {
       appetizers : [],
       mains : [],
       desserts : [],
-      set appetizers(appetizers) {
-         this.appetizers = appetizers 
+      set appetizers(appetizersin) {
+         this.appetizers = appetizersin 
       },
       set  mains(mains) {
          this.mains = mains
@@ -134,20 +134,25 @@ const menu = {
          desserts : this._courses.desserts
       }
    } ,
+   
    addDishToCourse(courseName , dishName , dishPrice) {
       const dish = {
          dishName ,
          dishPrice
       }
-      this._courses.courseName.push(dish);
+      this._courses[courseName].push(dish);
    },
    getRandomDishFromCourse(courseName) {
           let  dishes = this._courses[courseName] ; 
-          let x = Math.random() * dishes.length;
-          x = Math.floor(x) 
+          let x = Math.floor(Math.random() * dishes.length) 
          return dishes[x];
    },
    generateRandomMeal() {
+      const appetizer = this.getRandomDishFromCourse('appetizers') ;
+      const main = this.getRandomDishFromCourse('mains') ; 
+      const dessert = this.getRandomDishFromCourse('desserts')
+      let totalPrice = appetizer.dishPrice + main.dishPrice + dessert.dishPrice ; 
+      return `Your Meal contains ${appetizer.dishName} , ${main.dishName} , ${dessert.dishName} and the Total price is ${totalPrice}`
       
    }
 } 
