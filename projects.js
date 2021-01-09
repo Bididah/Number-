@@ -171,3 +171,37 @@ menu.addDishToCourse('desserts', 'flan', 10)
 let meal = menu.generateRandomMeal()
 console.log(meal)
 console.log(menu.courses)
+// Team Stats project 
+const team = {
+   _players : [
+      {firstName: 'Robert',lastName: 'Lewandovski',age: 33},
+      {firstName: 'Messi',lastName: 'Leo',age: 33},
+      {firstName: 'Ronaldo',lastName: 'Cristiano',age: 35}
+   ],
+   _games : [
+      { opponent: 'Broncos',teamPoints: 42,opponentPoints: 27},
+      { opponent: 'Broncos',teamPoints: 42,opponentPoints: 27},
+      { opponent: 'Broncos',teamPoints: 42,opponentPoints: 27}
+   ],
+   get players() {
+      return this._players;
+   }, 
+   get games() {
+      return this._games ; 
+   }, 
+   addPlayers(firstName , lastName , age ) {
+      let newPlayer = { firstName , lastName, age };
+      this.players.push(newPlayer);
+   },
+   addGame(opponent,teamPoints,opponentPoints){
+      let newGame = {opponent,teamPoints,opponentPoints}
+      this.games.push(newGame)
+   
+   }
+    
+} 
+team.addPlayers('joshwoa' , 'kimmich' , 24 )
+team.addGame('hamza', 25, 42 )
+
+console.log(team.players)
+console.log(team.games)
