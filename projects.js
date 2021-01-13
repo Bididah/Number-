@@ -231,3 +231,13 @@ const bigNumbers = [100, 200, 300, 400, 500];
  const smallNumbers = randomNumbers.filter(element => {
     return element < 250 ; 
  })
+
+ const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+
+ const foundAnimal = animals.findIndex(element => {
+    return element === "elephant" ; 
+ })
+
+ const startsWithS = animals.findIndex(element => {
+    return element[0] === "s" ; 
+ })
