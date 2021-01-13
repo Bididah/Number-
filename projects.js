@@ -205,3 +205,29 @@ team.addGame('hamza', 25, 42 )
 
 console.log(team.players)
 console.log(team.games)
+
+// javascript iterators Codecademy Course 
+
+const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+fruits.forEach(element => console.log(`I want to eat a ${element}.`))
+
+const animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
+
+// Create the secretMessage array below
+
+const secretMessage = animals.map(element => {
+   return element[0] ;
+})
+
+console.log(secretMessage.join(''));
+
+const bigNumbers = [100, 200, 300, 400, 500];
+
+// Create the smallNumbers array below
+ const smallNumbers = bigNumbers.map(element => {
+    return element/100 ; 
+ }) 
+ const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+ const smallNumbers = randomNumbers.filter(element => {
+    return element < 250 ; 
+ })
