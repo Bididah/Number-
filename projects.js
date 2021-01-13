@@ -241,3 +241,13 @@ const bigNumbers = [100, 200, 300, 400, 500];
  const startsWithS = animals.findIndex(element => {
     return element[0] === "s" ; 
  })
+ const newNumbers = [1, 3, 5, 7];
+ const newSum = newNumbers.reduce((accc, curntval ) => {
+    return accc + curntval ;
+ })
+ const newNumbers = [1, 3, 5, 7];
+const newSum = newNumbers.reduce((accumulator, currentValue ) => {
+  console.log('The value of currentValue: ', currentValue);
+  console.log('The value of accumulator: ', accumulator);
+    return accumulator +  currentValue ;
+ })
