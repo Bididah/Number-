@@ -224,7 +224,7 @@ console.log(secretMessage.join(''));
 const bigNumbers = [100, 200, 300, 400, 500];
 
 // Create the smallNumbers array below
- const smallNumbers = bigNumbers.map(element => {
+ const smallNumberse = bigNumbers.map(element => {
     return element/100 ; 
  }) 
  const randomNumbers = [375, 200, 3.14, 7, 13, 852];
@@ -232,7 +232,7 @@ const bigNumbers = [100, 200, 300, 400, 500];
     return element < 250 ; 
  })
 
- const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+ const animals1 = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
 
  const foundAnimal = animals.findIndex(element => {
     return element === "elephant" ; 
@@ -245,9 +245,26 @@ const bigNumbers = [100, 200, 300, 400, 500];
  const newSum = newNumbers.reduce((accc, curntval ) => {
     return accc + curntval ;
  })
- const newNumbers = [1, 3, 5, 7];
-const newSum = newNumbers.reduce((accumulator, currentValue ) => {
+ const newNumbers2 = [1, 3, 5, 7];
+
+const newSum1 = newNumbers.reduce((accumulator, currentValue ) => {
   console.log('The value of currentValue: ', currentValue);
   console.log('The value of accumulator: ', accumulator);
     return accumulator +  currentValue ;
  })
+ const words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
+
+ // Something is missing in the method call below
+ 
+ console.log(words.some((word) => {
+   return word.length < 6;
+ }));
+ 
+ // Use filter to create a new array
+ 
+ 
+ 
+ // Make sure to uncomment the code below and fix the incorrect code before running it
+ 
+ // console.log(interestingWords.every((word) => { } ));
+ 
