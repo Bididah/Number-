@@ -290,3 +290,15 @@ const NUMBERoFoverusedWord = (array) => {
    return `the number of overusedword combined is ${n}`
    }
 console.log(NUMBERoFoverusedWord(betterWords))
+
+const reverseArray = (array) => {
+   reversdArray = []
+   n = array.length ;
+   for (let i=0; i<n; i++) {
+      
+      reversdArray[i] = array[(n-1)-i]
+   }
+   return reversdArray 
+ }
+
+ console.log(reverseArray([1,2,3]))
