@@ -302,3 +302,28 @@ const reverseArray = (array) => {
  }
 
  console.log(reverseArray([1,2,3]))
+ const digFactory = (nama , breed,weight ) => {
+    return obj = {
+       _name = nama,
+       _breed = breed,
+       _weight = weight,
+       get name() {
+          return this._name
+       },
+       get breed() {
+          return this._breed 
+       },
+       get weight() {
+          return this._weight
+       },
+       set name(string) {
+         this._nama = string
+       },
+       set breed(string) {
+         this._breed = string
+       },
+       set weight(string) {
+         this._weight = string
+       },
+    }
+ }
